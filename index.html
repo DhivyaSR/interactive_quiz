@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Interactive Quiz</h1>
+        <div class="question_box">
+            <label for="question1">1) What is the capital of France?</label><hr>
+            <input type="radio" name="question1" id="correct1"> Paris<br>
+            <input type="radio" name="question1"> London<br>
+            <input type="radio" name="question1"> Berlin<br>
+            <button class="next" onclick="next(1)">NEXT</button>
+        </div>
+
+        <div class="question_box">
+            <label for="question1">2) Which planet is known as the Red Planet?</label><hr>
+            <input type="radio" name="question2" id="correct2"> Mars<br>
+            <input type="radio" name="question2"> Venus<br>
+            <input type="radio" name="question2"> Jupiter<br>
+            <button class="next" onclick="next(2)">NEXT</button>
+        </div>
+
+        <div class="question_box">
+            <label for="question1">3) What is the largest mammal on Earth?</label><hr>
+            <input type="radio" name="question3"> Elephant<br>
+            <input type="radio" name="question3" id="correct3"> Blue Whale<br>
+            <input type="radio" name="question3"> Giraffe<br>
+            <button onclick="result()">SUMBIT QUIZ</button>
+        </div>
+        <div class="score_board">
+            <p class="close" onclick="close_score();">X</p>
+            <h2>Interactive Quiz</h2>
+            <h3>Your Quiz Result</h3>
+            <p id="score_card">Score : 2</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
